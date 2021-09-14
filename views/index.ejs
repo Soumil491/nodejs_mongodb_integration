@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <!--CREATING THE INFO-->
+    <h1>Employee directory</h1>
+    <div>
+    <h4>Create new User</h4>
+    <form action="/createUser" method="POST">
+        <input type="text" placeholder="empName" name="empName" />
+        <input type="text" placeholder="empID" name="empID" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
+    <!--UPDATING THE INFO-->
+    <div>
+        <h4>Updating the info</h4>
+        <form>
+        <input id="update-empName" type="text" placeholder="empName" name="empName" />
+        <input id="update-newEmpName" type="text" placeholder="New Employee Name" name="newEmpName" />
+        <input id="update-newEmpID" type="number" placeholder="New Employee ID" name="newEmpID" />
+            <button id="update-button">Update</button>
+        </form>
+    </div>
+    <!--DELETING THE INFO-->
+    <div>
+        <h4>Deleting the info</h4>
+        <form>
+            <input id="delete-empName" type="text" placeholder="empName" name="empName" />
+            <button id="delete-button"> Delete</button>
+        </form>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+
+
+</html>
